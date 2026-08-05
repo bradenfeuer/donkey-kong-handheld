@@ -10,8 +10,8 @@ A playable Donkey Kong clone running bare-metal at 80 MHz on a **custom PCB** �
 
 - Five-level platform stage with ladders, fall-through gaps, and an instant-death pit
 - Up to **10 barrels rolling simultaneously**, each following one of four pre-computed paths chosen at random on spawn
-- Table-driven jump arc — height/timing tunable without touching physics code
-- Collectible bananas spawning at random locations on a timer
+- Table-driven jump physics — height/timing tunable without touching physics code
+- Randomly spawning collectable bananas
 - 3 lives, score, pause, animated game-over screen
 - **Bilingual UI** (English/Spanish) selected via slide potentiometer
 - DAC sound effects on jump, coin pickup, and death
