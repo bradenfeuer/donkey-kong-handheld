@@ -10,7 +10,7 @@ A playable Donkey Kong clone running bare-metal at 80 MHz on a **custom PCB** �
 
 - Five-level platform stage with ladders, fall-through gaps, and an instant-death pit
 - Up to **10 barrels rolling simultaneously**, each following one of four pre-computed paths chosen at random on spawn
-- Table-driven jump physics — height/timing tunable without touching physics code
+- Table-driven jump physics: height/timing tunable without touching physics code
 - Randomly spawning collectable bananas
 - 3 lives, score, pause, animated game-over screen
 - **Bilingual UI** (English/Spanish) selected via slide potentiometer
@@ -22,9 +22,9 @@ Three interrupt timers drive the game independently of the render loop:
 
 | Timer | Rate | Job |
 |---|---|---|
-| TIMG12 | 30 Hz | game engine tick — animation, score, banana timer, barrel spawning |
+| TIMG12 | 30 Hz | game engine tick: animation, score, banana timer, barrel spawning |
 | TIMG0 | 30 Hz | barrel path stepping |
-| SysTick | 11 kHz | DAC sound output — sample-by-sample audio |
+| SysTick | 11 kHz | DAC sound output: sample-by-sample audio |
 
 ![System block diagram](docs/images/block-diagram.png)
 
@@ -34,7 +34,7 @@ Both ISRs bail out immediately when the pause flag is set. **All SPI display out
 
 Custom PCB: MSPM0G3507, 128×160 ST7735 TFT, pushbuttons (jump / climb up / climb down / pause), slide potentiometer via ADC for movement and menu selection, binary-weighted DAC for audio out to a speaker.
 
-The final board, populated — UT crest on the silkscreen:
+The final board, populated: UT crest on the silkscreen:
 
 <img src="docs/images/pcb-populated.png" height="360" alt="Populated custom PCB">
 
