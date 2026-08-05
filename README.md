@@ -4,7 +4,7 @@
 
 <img src="docs/images/gameplay.gif" height="420" alt="Gameplay on the custom PCB">
 
-A playable Donkey Kong clone running bare-metal at 80 MHz on a **custom PCB** — ECE 319K final project at UT Austin, built with Pranav Shivashankar.
+A playable Donkey Kong clone running bare-metal at 80 MHz on a **custom PCB,** ECE 319K final project at UT Austin, built with Pranav Shivashankar.
 
 ## Features
 
